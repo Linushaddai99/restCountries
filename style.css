@@ -1,0 +1,111 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+
+#colo {
+    background-color: hsl(209, 23%, 22%);
+    background-color: hsl(207, 26%, 17%);
+    background-color: hsl(200, 15%, 8%);
+    background-color: hsl(0, 0%, 52%);
+    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+.nav {
+    background-color: hsl(209, 23%, 22%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px 10px 80px;
+    color: hsl(0, 0%, 98%);
+}
+
+.moon {
+    margin-top: 3px;
+    margin-right: 4px;
+}
+
+/* .container {
+    margin
+} */
+
+.search {
+    background-color: hsl(209, 23%, 22%);
+    margin-top: 50px;
+    color: hsl(0, 0%, 98%);
+    width: 350px;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    color:hsl(0, 0%, 98%);
+    margin-left: 15px;
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(0, 0%, 98%);
+    opacity: 1; /* Firefox */
+    font-size: smaller;
+  }
+
+.small {
+    color:hsl(0, 0%, 98%);
+    font-size: 12px;
+}
+
+span {
+    color:hsl(0, 3%, 71%) !important;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 30px;
+    background-color: hsl(209, 23%, 22%);
+    width: 200px;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    background-color: hsl(209, 23%, 22%);
+    width: 200px;
+    margin-top: 8px !important;
+    border: none;
+}
+
+.dropdown-menu a {
+    color:hsl(0, 0%, 98%) !important;
+}
+
+
+.dropdown-menu a:hover {
+    background-color: hsl(208, 30%, 18%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: hsl(209, 23%, 22%);
+    height: 350px;
+}
+
+.card-img-top {
+    max-height: 250px !important;
+} 
