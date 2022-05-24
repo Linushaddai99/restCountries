@@ -15,3 +15,14 @@ const fetchCountries = async() => {
     countries = await response.json();
     return countries;
 }
+
+
+const getCountry = async (country) => {
+  const url = "https://restcountries.com/v2/name/";
+  const query = `${country}`;
+
+  const data = await fetch(url + query);
+  const details = await data.json();
+
+  return details;
+}
