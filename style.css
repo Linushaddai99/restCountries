@@ -114,6 +114,10 @@ form input {
   font-weight: 600;
 }
 
+#icon {
+    cursor: pointer;
+}
+
 h6,
 h3 {
   color: var(--text-color);

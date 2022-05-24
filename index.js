@@ -15,6 +15,11 @@ icon.addEventListener('click', () => {
     }
 })
 
+const backHome = document.querySelector('.back-to-allCountries')
+backHome.addEventListener('click', () => {
+  renderCountries(allCountries);
+})
+
  const filterCountries = (item) => {
    allCountries = countries;
    let similarCountries = allCountries.filter(country => country.name.toLowerCase().includes(item.toLowerCase()) || country.region.toLowerCase().includes(item.toLowerCase()))
