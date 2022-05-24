@@ -46,7 +46,6 @@ const findCountry = (result) => {
             <div class="details-flag">
                 <img src="${imgSrc}" class="img-fluid details-img-css">
             </div>
-
             <div>
                 <div class="text-grid">
                     <div>
@@ -76,3 +75,13 @@ const findCountry = (result) => {
     `;
   detailsContainer.innerHTML = content;
 };
+
+const iconn = document.querySelector("#iconn");
+iconn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mood");
+  if (document.body.classList.contains("dark-mood")) {
+    iconn.setAttribute("class", "fa-solid fa-moon");
+  } else {
+    iconn.setAttribute("class", "fa-solid fa-sun");
+  }
+});

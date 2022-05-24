@@ -5,6 +5,16 @@ function htmlToElement(html) {
   return temp.content.firstElementChild;
 }
 
+let icon = document.querySelector('#icon');
+icon.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mood')
+    if(document.body.classList.contains('dark-mood')){
+      icon.setAttribute('class', 'fa-solid fa-moon')
+    } else {
+      icon.setAttribute('class', 'fa-solid fa-sun')
+    }
+})
+
  const filterCountries = (item) => {
    allCountries = countries;
    let similarCountries = allCountries.filter(country => country.name.toLowerCase().includes(item.toLowerCase()) || country.region.toLowerCase().includes(item.toLowerCase()))

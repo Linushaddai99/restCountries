@@ -16,11 +16,12 @@
   </head>
   <body>
     <header>
-        <nav class="navbar" style="background-color: hsl(209, 23%, 22%);">
-          <div class="nav-bar container-md">
+        <nav class="navbar">
+          <div class="nav-bar container-md mt-2">
             <h6 class="fw-bold">Where in the world?</h6>
             <div class="d-flex dark-mood align-items-center">
-              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun me-2" id="icon"></i>
+              <!-- <i class="fa-solid fa-moon" id="icon"></i> -->
               <small>Dark Mode</small>
             </div>
           </div>
@@ -30,15 +31,13 @@
     <div class="container-md">
       <div class="searchANDfilterDIV">
         <form class="search">
-          <input style="background-color: hsl(209, 23%, 22%); border: none; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-          hsl(207, 23%, 15%) 0px 2px 6px 2px;" class="form-control m-auto" type="text" name="searchItem" placeholder="search Countries">
+          <input style="border: none;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;" class="form-control m-auto" type="text" name="searchItem" placeholder="search for a country..">
        </form>
         <div class="dropdown filter-continent">
           <a
             class="btn dropdown-toggle fil-text"
             style="
-              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-                hsl(207, 23%, 15%) 0px 2px 6px 2px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
             "
             href="#"
             role="button"
